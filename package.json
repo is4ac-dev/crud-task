@@ -1,0 +1,11 @@
+{
+  "name": "crud-task",
+  "version": "1.0.0",
+  "description": "API para gerenciamento de tarefas CRUD com suporte a CSV",
+  "author": "Isaac Monteiro",
+  "license": "ISC",
+  "type": "module",
+  "scripts": {
+    "start:dev": "node --watch src/server.js"
+  }
+}
