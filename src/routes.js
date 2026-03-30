@@ -8,10 +8,12 @@ export const routes = [
     method: "POST",
     path: "/tasks",
     handler(request, response) {
+      const { title, description } = request.body;
+
       const task = {
         id: randomUUID(),
-        title: "Atualização Windows",
-        description: "Atualizar o OS de Windows 10 para Windows 11",
+        title,
+        description,
         completed_at: null,
         created_at: new Date(),
         updated_at: null,
